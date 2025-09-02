@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[부스트캠프 AI Tech 8기] Day 1: PyTorch 기초"
+title: "[부스트캠프 AI Tech 8기] Day 1: PyTorch 기초 (1)"
 date: 2025-09-01 19:00:00+0900
 categories: [boostcamp]
 tags: [boostcamp, ai, pytorch, 부스트캠프]
@@ -8,7 +8,7 @@ description: "딥러닝 프레임워크인 PyTorch를 통해 텐서 연산의 �
 keywords: [pytorch, torch, tensor, colab, scalar, vector, matrix, data type, cuda, 연속균등분포, 표준정규분포]
 image:
   path: /assets/img/posts/boostcamp/boostcamp.jpg
-  alt: "부스트캠프 로고"
+  alt: "네이버 부스트캠프"
 comment: true
 ---
 
@@ -250,7 +250,7 @@ Tensor는 초기화 하지 않을 수도 있습니다. 어차피 다른 수로 �
 import numpy as np
 u = np.array([[0, 1], [2, 3]])
 v = torch.from_numpy(u)   # Numpy로 생성된 Tensor는 기본적으로 정수형
-v = torch.from_numpy(u).float()    # 따라서 타입 캐스팅이 필요
+v = torch.from_numpy(u).float()    # 따라서 타입 캐스팅이 필요
 ```
 
 ### Tensor 복제

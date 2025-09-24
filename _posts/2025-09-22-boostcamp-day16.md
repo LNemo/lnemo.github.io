@@ -4,7 +4,7 @@ title: "[부스트캠프 AI Tech 8기] Day 16: CV 이론, CNN과 ViT"
 date: 2025-09-22 18:40:00+0900
 categories: [boostcamp]
 tags: [boostcamp, ai, cv, cnn, transformer]
-description: "머신러닝의 생애주기에 대해 배우자."
+description: "Computer Vison에 대해 배우자."
 keywords: [numpy, colab, cv, computer vision, convoution, cnn, rnn, lstm, seq2seq, attention, transformer, vit, swin transformer, mae, dino]
 image:
   path: /assets/img/posts/boostcamp/boostcamp.jpg

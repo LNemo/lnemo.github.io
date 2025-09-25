@@ -87,3 +87,4 @@ MAE는 input의 일부를 masking하고 인코더에 넣습니다. 마스크된 
 DINO도 Self-supervise training의 한 종류로, student network와 teacher network의 구조로 되어있습니다. Student에는 이미지의 일부를, Teacher에는 전체 이미지를 input으로 넣고 student가 teacher의 예측과 같도록 학습합니다. 이 과정으로 학생 모델은 이미지의 중요한 특징을 스스로 터득하게 됩니다.
 
 
+

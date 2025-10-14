@@ -20,7 +20,7 @@ VAE(Variational AutoEncoders)는 대표적인 생성 모델 중 하나입니다.
 
 ### 목적식
 
-![이미지](/assets/img/posts/boostcamp/day27/pass.png)
+![이미지](/assets/img/posts/boostcamp/day27/loss.png)
 
 위 목적식에 마이너스를 붙인 것이 Loss Function입니다.
 - Reconstruction Loss

@@ -182,7 +182,6 @@ comment: true
   - ESC를 누른 후 :wq(저장하고 나가기, write and quit)
     - :wq! (강제로 저장하고 나가기)
     - :q (저장하지 않고 나가기)
-    - ![vi 모드](### vi)
     - [여기](#vi)에 더 자세한 명령어
   - ex) `vi vi-test.sh`
 - `bash`
@@ -199,8 +198,8 @@ comment: true
   - concatenate
   - 여러 파일을 인자로 주면 concat해서 print
   - 저장하고 싶은 경우에 `>` , 추가하고 싶은 경우 `>>`
-  - ex) `cat vi-test.sh` , 
-  `cat vi-test2.sh vi-test3.sh > new_test.sh` , 
+  - ex) `cat vi-test.sh`,  
+  `cat vi-test2.sh vi-test3.sh > new_test.sh`,  
   `cat vi-test2.sh vi-test3.sh >> new_test.sh`
 - `clear`
   - 터미널 청소
@@ -287,8 +286,8 @@ comment: true
   - secure copy
   - SSH를 이용해 네트워크로 연결된 호스트 간 파일을 주고 받는 명령어
   - 옵션: `-r` 재귀적으로 복사, `-P` ssh 포트 지정, `-i` ssh 설정을 활용해 실행
-  - ex) `scp local_path user@ip:remote_directory` , 
-  `scp user@ip:remote_directory local_path` ,
+  - ex) `scp local_path user@ip:remote_directory`,  
+  `scp user@ip:remote_directory local_path`,  
   `scp user@ip:remote_directory user2@ip2:target_remote_directory`
 - `nohup`
   - 터미널 종료 후에도 계속 작업이 유지하도록 실행

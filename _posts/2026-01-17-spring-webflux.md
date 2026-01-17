@@ -4,7 +4,7 @@ title: "[Spring] Spring WebFlux"
 date: 2026-01-17 20:07:00+0900
 categories: [Spring boot]
 tags: [spring, spring boot, backend, java, async, webflux]
-description: "Spring의 기본을 익히자."
+description: "Spring WebFlux를 익히자."
 keywords: [Spring Webflux, Reactive Programming, Asynchronous Non-blocking I/O, Reactive Streams, Project Reactor, Mono, Flux, Netty, Event Loop, Backpressure, Publisher, Subscriber, Subscription, Lazy Evaluation]
 image:
   path: /assets/img/posts/spring-boot/spring.png
@@ -67,6 +67,8 @@ comment: true
 - 리액티브 스트림 규격을 구현한 Java용 리액티브 라이브러리
 - Spring 프레임워크를 만드는 Pivotal에서 주도하여 개발
 - Spring Webflux의 핵심 엔진
+
+
 - 특징
   - 논블로킹(Non-blocking) & 효율성: blocking을 없애고 데이터가 준비되었을 때만 CPU가 일하게 함
   - Operators: 데이터를 가공하기 위한 많은 연산자 지원
@@ -80,11 +82,13 @@ comment: true
 - Flux
   - n개 항목에 대한 비동기 시퀀스를 나타내는 Publisher 구현체
 
-- Flux로 1개도 해결하면 될 것 같은데 왜 Mono가 필요할까?
-1. 프로그래밍 의도를 명확하게 하기 위해서 
-   - 이 메서드가 단건 반환을 기대하는지 다건 스트림을 기대하는지 명시
-2. 연산자 차별화
-   - Mono 전용 연산자와 Flux 전용 연산자가 존재함
+&nbsp;
+
+> **Flux로 1개도 해결하면 될 것 같은데 왜 Mono가 필요할까?**
+  1. 프로그래밍 의도를 명확하게 하기 위해서 
+    - 이 메서드가 단건 반환을 기대하는지 다건 스트림을 기대하는지 명시
+  2. 연산자 차별화
+    - Mono 전용 연산자와 Flux 전용 연산자가 존재함
 
 ---
 
@@ -106,10 +110,14 @@ comment: true
   - Tomcat 3.1부터 스레드풀 방식이지만 Non-blocking I/O처럼 동작할 수 있도록 개선했음
   - 근데도 왜 Netty에서 돌려야 할까?
 
+&nbsp;
+
 - Tomcat의 경우 (스레드풀 방식)
   - 비동기 작업 만나면 스레드 반환하고 db 결과가 왔을때 다시 노는 스레드로 작업 처리 (처음과 나중의 스레드가 다를 수 있음) -> **컨텍스트 스위칭 비용 발생**
 - Netty (이벤트 루프 방식) 
   - 동일 connection이면 해당 이벤트 루프(스레드)가 끝까지 책임짐
+
+&nbsp;
 
 - 컨텍스트 스위치 비용 발생 이유
   - 스레드 개수 차이
